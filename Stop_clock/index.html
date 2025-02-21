@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stopwatch Web Application</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Interactive Stopwatch</h1>
+    <div class="stopwatch-display">00:00:00.000</div>
+
+    <div class="controls">
+      <button id="start-pause-btn">Start</button>
+      <button id="reset-btn">Reset</button>
+      <button id="lap-btn">Lap</button>
+    </div>
+    <div class="laps-section">
+      <h2>Lap Times</h2>
+      <ul id="laps-list" class="laps-list"></ul>
+    </div>
+    <button id="theme-toggle">Toggle Dark Mode</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
