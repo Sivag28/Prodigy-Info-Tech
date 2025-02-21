@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather & Currency</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="logo">TravelX✈️</div>
+        <ul class="horizontal-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="domestic.html">Domestic Travel</a></li>
+            <li><a href="international.html">International Travel</a></li>
+            <li><a href="booking.html">Book Now</a></li>
+            <li><a href="chatbot.html">AI Chatbot</a></li>
+            <li><a href="weather.html">Weather & Currency</a></li>
+        </ul>
+    </nav>
+    <ul class="vertical-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="domestic.html">Domestic Travel</a></li>
+        <li><a href="international.html">International Travel</a></li>
+        <li><a href="booking.html">Book Now</a></li>
+        <li><a href="chatbot.html">AI Chatbot</a></li>
+        <li><a href="weather.html">Weather & Currency</a></li>
+    </ul>     
+    <div class="hero">
+        <h1>Plan Your Dream Trip</h1>
+    </div>
+    <div class="container">
+        <div class="content-box">
+            <h2 style="color: rgb(226, 18, 87);">Weather & Currency Exchange</h2>
+    <div class="weather-container">
+        <label for="location">Enter Location:</label>
+        <input type="text" id="location" placeholder="E.g., Paris">
+        <button onclick="getWeather()">Get Weather</button>
+        <div id="weather-result"></div>
+    </div>
+
+    <div class="currency-container">
+        <h3>Currency Exchange Rate</h3>
+        <label for="currency">Select Currency:</label>
+        <select id="currency">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="INR">INR</option>
+        </select>
+        <button onclick="getCurrency()">Get Rate</button>
+        <div id="currency-result"></div>
+    </div>
+</div>
+</div>
+<div id="profile-container">
+    <img src="bot.gif" alt="Chatbot Image" id="profile-image">
+</div>
+<footer>
+    <p>&copy; 2025 TravelX✈️. All Rights Reserved.</p>
+    <div class="contact-info">
+        <p><strong>📍 Address:</strong> 123 Travel Street, Tirunelveli , India | <strong>📧 Email:</strong> contact@travelx.com | <strong>📞 Phone:</strong> +1 234 567 890</p>
+    </div>
+    <div class="social-icons">
+        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+</footer>
+
+    <script src="weather.js"></script>
+</body>
+</html>

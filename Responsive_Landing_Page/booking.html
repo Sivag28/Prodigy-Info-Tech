@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Trip</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="logo">TravelX✈️</div>
+        <ul class="horizontal-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="domestic.html">Domestic Travel</a></li>
+            <li><a href="international.html">International Travel</a></li>
+            <li><a href="booking.html">Book Now</a></li>
+            <li><a href="chatbot.html">AI Chatbot</a></li>
+            <li><a href="weather.html">Weather & Currency</a></li>
+        </ul>
+    </nav>
+    <div class="hero">
+        <h1>Plan Your Dream Trip</h1>
+    </div>
+    
+    <div class="container">
+        <div class="form-wrapper">
+    <h2>Book Your Trip</h2>
+
+    <form class="booking-form">
+      
+        <ul class="vertical-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="domestic.html">Domestic Travel</a></li>
+            <li><a href="international.html">International Travel</a></li>
+            <li><a href="booking.html">Book Now</a></li>
+            <li><a href="chatbot.html">AI Chatbot</a></li>
+            <li><a href="weather.html">Weather & Currency</a></li>
+        </ul>        
+        <div class="form-group">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+
+        <div class="form-group">
+            <label for="arrival">Arrival Location (Flights Only):</label>
+            <select id="arrival" name="arrival">
+                <option value="" disabled selected>Choose Arrival City</option>
+                <option value="chennai">Chennai</option>
+                <option value="delhi">Delhi</option>
+                <option value="mumbai">Mumbai</option>
+                <option value="kolkata">Kolkata</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="arrival-airport">Arrival Airport:</label>
+            <select id="arrival-airport" name="arrival-airport">
+                <option value="" disabled selected>Select Arrival Airport</option>
+                <option value="MAA">Chennai International Airport (MAA)</option>
+                <option value="DEL">Indira Gandhi International Airport (DEL)</option>
+                <option value="BOM">Chhatrapati Shivaji Maharaj International Airport (BOM)</option>
+                <option value="CCU">Netaji Subhas Chandra Bose International Airport (CCU)</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="destination">Select Destination:</label>
+            <select id="destination" name="destination" required>
+                <option value="" disabled selected>Choose a Destination</option>
+                <optgroup label="Domestic Travel">
+                    <option value="Goa">Goa - ₹15,000</option>
+                    <option value="Manali">Manali - ₹18,000</option>
+                    <option value="Kerala">Kerala - ₹20,000</option>
+                    <option value="Jaipur">Jaipur - ₹12,000</option>
+                    <option value="Andaman">Andaman & Nicobar - ₹25,000</option>
+                </optgroup>
+                <optgroup label="International Travel">
+                    <option value="Maldives">Maldives - ₹80,000</option>
+                    <option value="Paris">Paris - ₹1,20,000</option>
+                    <option value="Dubai">Dubai - ₹90,000</option>
+                    <option value="Singapore">Singapore - ₹85,000</option>
+                    <option value="Switzerland">Switzerland - ₹1,50,000</option>
+                </optgroup>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="num-persons">Number of Persons:</label>
+            <input type="number" id="num-persons" name="num-persons" required min="1">
+        </div>
+
+        <div class="form-group">
+            <label for="travel-date">Travel Date:</label>
+            <input type="date" id="travel-date" name="travel-date" required>
+        </div>
+
+        <div class="form-group">
+            <label for="payment">Payment Method:</label>
+            <select id="payment" name="payment" required>
+                <option value="credit">Credit/Debit Card</option>
+                <option value="upi">UPI</option>
+                <option value="paypal">PayPal</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>
+                <input type="checkbox" id="travelx-coupon">
+                Apply TravelX Flight Coupon (₹1000)
+            </label>
+        </div>
+        <button type="submit" class="cta-button">Confirm Booking</button>
+        <div id="confirmationContainer"></div>
+    </form>
+  </div>
+</div>
+
+<div id="profile-container">
+    <img src="bot.gif" alt="Chatbot Image" id="profile-image">
+</div>
+<footer>
+    <p>&copy; 2025 TravelX✈️. All Rights Reserved.</p>
+    <div class="contact-info">
+        <p><strong>📍 Address:</strong> 123 Travel Street, Tirunelveli , India | <strong>📧 Email:</strong> contact@travelx.com | <strong>📞 Phone:</strong> +1 234 567 890</p>
+    </div>
+    <div class="social-icons">
+        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>
