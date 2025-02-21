@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Times New Roman', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('tic.png') no-repeat center center fixed; 
+    background-size: cover;
+  }
+  
+  .container {
+    text-align: center;
+    background: linear-gradient(135deg, #f8cdda, #1e90ff);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+  }
+  
+  .game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin: 20px;
+  }
+  
+  .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: #7FFFD4;
+    font-size: 32px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s ease;
+  }
+  
+  .cell:hover {
+    background-color: #f3d24e;
+  }
+  
+  .cell:active {
+    transform: translateX(15px);
+  }
+  
+  .cell.winning-cell {
+    background-color: #ffcccc;
+    text-decoration: line-through;
+    color: #d32f2f;
+  }
+  
+  .info-panel {
+    margin-top: 15px;
+  }
+  
+  button {
+    background-color: #e74c3c; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #69ef39;
+  }
+  
+  #statusMessage {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+  }
